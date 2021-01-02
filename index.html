@@ -1,0 +1,887 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>    
+  <title>Technical Documentation Page</title>
+  <link rel="stylesheet" href="./page.css">
+</head>
+<body>
+
+    <script  src = " https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js " >
+    </script>
+
+  <nav id="navbar">
+    <div class="nav-header">
+       <header class="text-center" style="font-size: 18pt;">Python Tutorial</header>
+    </div>
+    <div class="container">
+        
+        <ul class="nav navbar-nav">
+            <li>
+                <a class="nav-link" href="#Python_Introduction">Python Introduction</a>
+            </li>
+    
+            <li >
+                <a class="nav-link" href="#Python_Getting_Started">Python Getting Started</a>
+            </li>
+            
+            <li >
+                <a class="nav-link" href="#Hello_World">Hello World</a>
+            </li>
+
+            <li >
+                <a class="nav-link" href="#Python_Syntax">Python Syntax</a>
+            </li>
+    
+            <li >
+                <a class="nav-link" href="#Python_Variables">Python Variables</a>
+            </li>
+    
+            <li>
+                <a class="nav-link" href="#Python_Data_Types">Python Data Types</a>
+            </li>
+    
+            <li>
+                <a class="nav-link" href="#Python_Operators">Python Operators</a>
+            </li>
+    
+            
+
+        </ul>
+    </div>
+  </nav>    
+
+<main id="main-doc">
+        <section class="main-section" id="Python_Introduction" >
+            <header class="alert alert-success text-center" style="font-size: 20pt;">Python Introduction</header>
+            <h2>What is Python?</h2>
+            Python is a popular programming language. It was created by Guido van Rossum, and released in 1991.
+            <br>
+            It is used for:
+            <br>
+            <ul>
+                <li>web development (server-side),</li>
+                <li>software development,</li>
+                <li>mathematics,</li>
+                <li>system scripting.</li>
+            </ul>
+
+            <h2>What can Python do?</h2>
+            <ul>
+                <li>Python can be used on a server to create web applications.</li>
+                <li>Python can be used alongside software to create workflows.</li>
+                <li>Python can connect to database systems. It can also read and modify files.</li>
+                <li>Python can be used to handle big data and perform complex mathematics.</li>
+                <li>Python can be used for rapid prototyping, or for production-ready software development.</li>
+            </ul>
+
+            <h2>Why Python?</h2>
+            <ul>
+                <li>Python works on different platforms (Windows, Mac, Linux, Raspberry Pi, etc).</li>
+                <li>Python has a simple syntax similar to the English language.</li>
+                <li>Python has syntax that allows developers to write programs with fewer lines than some other programming languages.</li>
+                <li>Python runs on an interpreter system, meaning that code can be executed as soon as it is written. This means that prototyping can be very quick.</li>
+                <li>Python can be treated in a procedural way, an object-oriented way or a functional way.</li>
+            </ul>
+
+            <h2>Good to know</h2>
+            <ul>
+                <li>The most recent major version of Python is Python 3, which we shall be using in this tutorial. However, Python 2, although not being updated with anything other than security updates, is still quite popular.</li>
+                <li>In this tutorial Python will be written in a text editor. It is possible to write Python in an Integrated Development Environment, such as Thonny, Pycharm, Netbeans or Eclipse which are particularly useful when managing larger collections of Python files.</li>
+            </ul>
+            <h2>Python Syntax compared to other programming languages</h2>
+            <ul>
+                <li>Python was designed for readability, and has some similarities to the English language with influence from mathematics.</li>
+                <li>Python uses new lines to complete a command, as opposed to other programming languages which often use semicolons or parentheses.</li>
+                <li>Python relies on indentation, using whitespace, to define scope; such as the scope of loops, functions and classes. Other programming languages often use curly-brackets for this purpose.</li>
+            </ul>
+
+            <h2>Example</h2>
+            </section>
+            <section class="main-section" id="Hello_World">
+                <header>Hello World</header>
+                <h3><code>print("Hello,World!")</code></h3>
+            </section>
+
+            <section class="main-section" id="Python_Getting_Started">
+                <header class="alert alert-success text-center" style="font-size: 20pt;">Python Getting Started</header>
+                <h2>Python Install</h2>
+               <p> Many PCs and Macs will have python already installed.</p>
+
+                To check if you have python ><h3><code>C:\Users\Your Name>python --version</code></h3>
+                <p>To check if you have python installed on a Linux or Mac, then on linux open the command line or on Mac open the Terminal and type:</p>
+               <h3> <code>python --version</code></h3>
+                <p>If you find that you do not have python installed on your computer, then you can download it for free from the following website: <a href="https://www.python.org/" target="_blank">https://www.python.org/</a></p>
+                <h2>Python Quickstart</h2>
+               <h3> <code>python --version</code></h3>
+               <p>
+                Python is an interpreted programming language, this means that as a developer you write Python (.py) files in a text editor and then put those files into the python interpreter to be executed.
+
+                The way to run a python file is like this on the command line:
+               </p>
+                <h3><code>C:\Users\Your Name>python helloworld.py</code></h3>
+                
+                <p> Where "helloworld.py" is the name of your python file.
+
+                    Let's write our first Python file, called helloworld.py, which can be done in any text editor.
+                </p>
+                <p>Simple as that. Save your file. Open your command line, navigate to the directory where you saved your file, and run:</p>
+                <h3><code>C:\Users\Your Name>python helloworld.py</code></h3>
+                <p>The output should read:</p>
+                <h3><code>Hello, World!</code></h3>
+                <p> Congratulations, you have written and executed your first Python program.</p>
+
+                <h2>The Python Command Line</h2>
+                <p>
+                    To test a short amount of code in python sometimes it is quickest and easiest not to write the code in a file. This is made possible because Python can be run as a command line itself.
+
+                     Type the following on the Windows, Mac or Linux command line:
+                </p>
+
+               <h3><code>C:\Users\Your Name>python</code></h3>
+                <p>Or, if the "python" command did not work, you can try "py":</p>
+               
+                <h3><code>C:\Users\Your Name>py</code></h3>
+               <p> From there you can write any python, including our hello world example from earlier in the tutorial:</p>
+                <h3>
+                    <code>
+                        C:\Users\Your Name>py
+                        Python 3.6.4 (v3.6.4:d48eceb, Dec 19 2017, 06:04:45) [MSC v.1900 32 bit (Intel)] on win32
+                        Type "help", "copyright", "credits" or "license" for more information.
+                        >>> print("Hello, World!")
+                    </code>
+                </h3>
+                <p> Which will write "Hello, World!" in the command line:</p>
+
+                <h3>
+                    <code>
+                        C:\Users\Your Name>python
+                        Python 3.6.4 (v3.6.4:d48eceb, Dec 19 2017, 06:04:45) [MSC v.1900 32 bit (Intel)] on win32
+                        Type "help", "copyright", "credits" or "license" for more information.
+                        >>> print("Hello, World!") <br>
+                        Hello, World!
+                    </code>
+                </h3>
+               <p> Whenever you are done in the python command line, you can simply type the following to quit the python command line interface:
+            </p>
+               <h3><code>exit()</code></h3>
+
+
+        </section>
+            
+        <section class="main-section" id="Python_Syntax">
+                <header class="alert alert-success text-center"  style="font-size: 20pt;">Python Syntax</header>
+                <h2>Execute Python Syntax</h2>
+                <p>As we learned in the previous page, Python syntax can be executed by writing directly in the Command Line:</p>               
+                <h3>
+                    <code> 
+                        >>>print("Hello, World!") <br>
+                        Hello, World!
+                    </code>
+                </h3>
+               
+               <p> Or by creating a python file on the server, using the .py file extension, and running it in the Command Line:</p>
+                <h3><code>C:\Users\Your Name>python myfile.py</code></h3>
+
+                <h2>Python Indentation</h2>
+                Indentation refers to the spaces at the beginning of a code line.
+
+                Where in other programming languages the indentation in code is for readability only, the indentation in Python is very important.
+
+                Python uses indentation to indicate a block of code. <br>
+                <h2>Example <br> Syntax Error:</h2>
+               <h3>
+                    <code> if 5 > 2:</code> <br>
+                    <code>print("Five is greater than two!")</code>
+                    
+                </h3>
+                <p>The number of spaces is up to you as a programmer, but it has to be at least one.</p>
+                <h2>Exemplo</h2>
+               <h3><code> if 5 > 2: print("Five is greater than two!")</code></h3>
+
+        </section>
+
+        <section class="main-section" id="Python_Variables">
+            <header>Python Variables</header>
+            <h2>Variables</h2>
+            <p>Variables are containers for storing data values.</p>
+            
+            <h2> Creating Variables</h2>
+            <p>Python has no command for declaring a variable.</p>            
+           
+            <p> A variable is created the moment you first assign a value to it.</p>
+           <h2> Example</h2>
+           <h3><code>x = 5 <br>
+            y = "John" <br>
+            print(x) <br>
+            print(y) <br>
+        </code></h3>
+        <p>Variables do not need to be declared with any particular type, and can even change type after they have been set.
+        </p>
+        <h2>Example</h2>
+        <h3><code>x = 4       # x is of type int <br>
+            x = "Sally" # x is now of type str <br>
+            print(x)
+        </code></h3>
+        <h2>Casting</h2>
+        <p>If you want to specify the data type of a variable, this can be done with casting.</p>
+        <h2>Example</h2>
+        <h3><code>
+            x = str(3)    # x will be '3' <br>
+            y = int(3)    # y will be 3 <br>
+            z = float(3)  # z will be 3.0 <br>
+        </code></h3>
+       <h2> Get the Type</h2>
+        <p>You can get the data type of a variable with the type() function.</p>
+        <h2>Example</h2>
+        <h3><code>
+            x = 5 <br>
+            y = "John" <br>
+            print(type(x)) <br>
+            print(type(y)) <br>
+        </code></h3>
+       <h2> Single or Double Quotes?</h2>
+        <p>String variables can be declared either by using single or double quotes:</p>
+
+       <h2> Example</h2>
+        <h3><code>
+            x = "John" <br>
+            # is the same as <br>
+            x = 'John' <br>
+        </code></h3>
+        <h2>Case-Sensitive</h2>
+        <p>Variable names are case-sensitive.</p>
+
+        <h2>Example</h2>
+        <p>This will create two variables:</p>
+
+        <h3><code>
+            a = 4 <br>
+            A = "Sally" <br>
+            #A will not overwrite a <br>
+        </code></h3>
+        <h2>Python - Variable Names</h2>
+        <h2>Variable Names</h2>
+        <ul>
+            <li>A variable can have a short name (like x and y) or a more descriptive name (age, carname, total_volume). Rules for Python variables:</li>
+            <li>A variable name must start with a letter or the underscore character</li>
+            <li>A variable name cannot start with a number</li>
+            <li>A variable name can only contain alpha-numeric characters and underscores (A-z, 0-9, and _ )</li>
+            <li>Variable names are case-sensitive (age, Age and AGE are three different variables)</li>
+        </ul>
+      <h2>  Example</h2>
+      <h2>Legal variable names:</h2>
+
+      <h3><code>
+        myvar = "John" <br>
+        my_var = "John" <br>
+        _my_var = "John" <br>
+        myVar = "John" <br>
+        MYVAR = "John" <br>
+        myvar2 = "John" <br>
+      </code></h3>
+      <h2> Example <br>Illegal variable names:</h2>
+
+      <h3><code>
+        2myvar = "John" <br>
+        my-var = "John" <br>
+        my var = "John" <br>
+      </code></h3>
+      <p>Remember that variable names are case-sensitive</p>
+     <h2> Multi Words Variable Names</h2>
+      <p>Variable names with more than one word can be difficult to read. <br>There are several techniques you can use to make them more readable:</p>
+
+      <h2>Camel Case</h2>
+      <p>Each word, except the first, starts with a capital letter: </p>
+      <h3><code>myVariableName = "John"</code></h3>
+      <h2>Pascal Case</h2>
+      <p>Each word starts with a capital letter:</p>
+
+      <h3><code>MyVariableName = "John"</code></h3>
+      <h2>Snake Case</h2>
+      <p>Each word is separated by an underscore character:</p>
+      <h3><code>my_variable_name = "John"</code></h3>
+
+     <h2> Python Variables - Assign Multiple Values <br> Many Values to Multiple Variables</h2>
+     
+     <p>Python allows you to assign values to multiple variables in one line:</p>
+
+      <h2>Example</h2>
+      <h3><code>
+        x, y, z = "Orange", "Banana", "Cherry" <br>
+        print(x) <br>
+        print(y) <br>
+        print(z) <br>
+      </code></h3>
+    <h2>Note:</h2> <h4>Make sure the number of variables matches the number of values, or else you will get an error.</h4>
+    <h2>One Value to Multiple Variables</h2>
+    <p>And you can assign the same value to multiple variables in one line:</p>
+    <h2>    Example</h2>
+    <h3><code>
+    x = y = z = "Orange" <br>
+    print(x) <br>
+    print(y) <br>
+    print(z) <br>
+    </code></h3>
+    <h2>Unpack a Collection</h2>
+    <p>If you have a collection of values in a list, tuple etc. Python allows you extract the values into variables. This is called unpacking.
+    </p>
+    <h2>Example</h2>
+    <p>Unpack a list:</p>
+
+    <h3><code>
+        fruits = ["apple", "banana", "cherry"] <br>
+        x, y, z = fruits <br>
+        print(x) <br>
+        print(y) <br>
+        print(z) <br>
+    </code></h3>
+   
+        </section>
+        
+                
+        <section class="main-section" id="Python_Data_Types">
+            <header>Python Data Types</header>
+            <h2>Python Data Types <br>Built-in Data Types</h2>
+            <p>In programming, data type is an important concept.<br>Variables can store data of different types, and different types can do different things.<br> Python has the following data types built-in by default, in these categories:
+            </p>
+        
+            <table class="table table-bordered table-striped" width="100px">
+               <thead>
+                <tr class="success">
+                    <th>Text Type:</th>
+                    <th>Numeric Types:</th>
+                    <th>Sequence Types:	</th>
+                    <th>Mapping Type:</th>
+                    <th>Set Types:</th>
+                    <th>Boolean Type:</th>
+                    <th>Binary Types:</th>
+                </tr>
+                
+               </thead>
+               <tbody>
+                   <td>str</td>
+                   <td>int, float, complex</td>
+                   <td>list, tuple, range</td>
+                   <td>	dict</td>
+                   <td>set, frozenset</td>
+                   <td>bool</td>
+                   <td>bytes, bytearray, memoryview</td>
+               </tbody>
+            </table>
+            
+            <h2>Getting the Data Type</h2>
+            <p>You can get the data type of any object by using the type() function:</p>
+            <h2>Example</h2>
+            <h3>Print the data type of the variable x:</h3>
+        
+            <h3><code>x = 5 <br> print(type(x))</code></h3>
+            <h2>Setting the Data Type</h2>
+            <p> In Python, the data type is set when you assign a value to a variable:</p>
+        
+            <table class="table table-bordered table-striped">
+                <thead>
+                    <tr class="success">
+                        <th>Example</th>
+                        <th>Data Type</th>
+                    </tr>
+                </thead>
+                <tbody>
+                       <tr>
+                        <td>x = "Hello World"</td>
+                        <td>str</td>
+                       </tr>
+                        <tr><td> x = 20</td>
+                            <td>int	</td>
+                        </tr>
+                       <tr>
+                        <td> x = 20.5</td>
+                        <td>float</td>
+                       </tr>
+                        <tr>             
+                            <td> x = ["apple", "banana", "cherry"]</td>
+                            <td>list</td>
+                        </tr>
+                        <tr>
+                           
+                            <td>x = tuple("apple", "banana", "cherry")</td>
+                            <td>tuple</td>
+                        </tr>
+                        <tr>
+                            <td>x = range(6)</td>
+                            <td>range</td>
+                            
+                        </tr>
+                        
+                        <tr>
+                             <td>x = {"name" : "John", "age" : 36}</td>
+                             <td>dict</td>
+                        </tr>
+                        
+                        <tr>
+                            
+                            <td>x ={"apple", "banana", "cherry"}</td>
+                            <td>set	</td>
+                        </tr>
+                        
+                        <tr>
+                             <td>x = frozenset({"apple", "banana", "cherry"})</td>
+                             <td>frozenset</td>
+                        </tr>
+                        <tr>
+                           
+                            <td>x = True</td>
+                            <td>bool</td>
+                        </tr>
+                        <tr>
+                            
+                            <td> x = b"Hello"</td>
+                            <td>bytes</td>
+                        </tr>
+                        <tr>
+                            
+                            <td>x = bytearray(5)</td>
+                            <td>bytearray</td>
+                        </tr>
+                        <tr>
+                           
+                            <td>x = memoryview(bytes(5))</td>
+                            <td>memoryview</td>
+                        </tr>
+                </tbody>
+            </table>
+          
+           <h2> Setting the Specific Data Type</h2>
+               
+            <p> If you want to specify the data type, you can use the following constructor functions:</p>	
+                   
+                   
+            <table class="table table-striped table-bordered" width="100px">
+                <thead>
+                    <tr class="success">
+                        <th>Example</th>
+                        <th>Data Type</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                        <tr>
+                            <td>x = str("Hello World")</td>
+                            <td>str	</td>
+                        </tr>
+                        <tr>
+                            <td>x = int(20)</td>
+                            <td>int</td>
+                        </tr>
+                        <tr>
+                            <td>x = float(20.5)</td>
+                            <td>float</td>
+                        </tr>
+                        <tr>
+                            <td>x = complex(1j)	</td>
+                             <td>complex</td>
+                        </tr>
+                        <tr>
+                            <td>x = list(("apple", "banana", "cherry"))</td>
+                            <td>list</td>
+                        </tr>
+                        <tr>
+                            <td>x = tuple(("apple", "banana", "cherry"))</td>
+                        <td>tuple</td>
+                        </tr>
+                        <tr>
+                            <td>x = range(6)</td>
+                            <td>range</td>
+                        </tr>
+                        <tr>
+                            <td>x = dict(name="John", age=36)</td>
+                            <td>dict</td>
+                        </tr>
+                        <tr>
+                            <td>x = set(("apple", "banana", "cherry"))</td>
+                            <td>set</td>
+                        </tr>
+                        <tr>
+                            <td>x = frozenset(("apple", "banana", "cherry"))</td>
+                            <td>frozenset</td>
+                        </tr>
+                        <tr>
+                            <td>x = bool(5)</td>
+                            <td>bool</td>
+                        </tr>
+                        <tr>
+                            <td>x = bytes(5)</td>
+                            <td>bytes</td>
+                        </tr>
+                        <tr>
+                            <td>x = bytearray(5)</td>
+                            <td>bytearray</td>
+                        </tr>
+                        <tr>
+                            <td>x = memoryview(bytes(5))</td>
+                             <td>memoryview</td>
+                        </tr>
+        
+                </tbody>
+            </table>
+        
+        </section>
+
+        <section class="main-section" id="Python_Operators">
+            <header>Python Operators</header>
+           <h2> Python Operators</h2>
+           <p> Operators are used to perform operations on variables and values.<br>In the example below, we use the + operator to add together two values:
+           </p>
+            
+           <h2>Example</h2>
+           <h3><code>print(10 + 5)</code></h3>
+          <h2> Python divides the operators in the following groups:</h2>
+          <ul>
+              <li>Arithmetic operators</li>
+              <li>Assignment operators</li>
+              <li>Comparison operators</li>
+              <li>Logical operators</li>
+              <li>Identity operators</li>
+              <li>Membership operators</li>
+              <li>Bitwise operators</li>
+          </ul>
+          <h2>Python Arithmetic Operators</h2>
+          <p>Arithmetic operators are used with numeric values to perform common mathematical operations:</p>
+        
+          <table class="table table-bordered table-striped">
+              <thead>
+                <tr class="success">
+                    <th> Operator</th>
+                    <th>Name</th>
+                    <th>Example</th>
+                </tr>
+              </thead>
+
+              <tbody>
+                  <tr>
+                      <td>+</td>
+                      <td>Addition</td>
+                      <td>x + y</td>
+                  </tr>
+                  <tr>
+                      <td>-</td>
+                      <td>Subtraction</td>
+                      <td>x - y</td>
+                  </tr>
+                  <tr>
+                    <td>*</td>
+                    <td>Multiplication</td>
+                    <td>x * y</td>
+                  </tr>
+                  <tr>
+                      <td>/</td>
+                      <td>Division</td>
+                      <td>x / y</td>
+                  </tr>
+
+                <tr>
+                    <td>%</td>
+                    <td>Modulus</td>
+                    <td>x % y</td>
+                </tr>
+                <tr>
+                    <td>**</td>
+                    <td>Exponentiation</td>
+                    <td>x ** y</td>
+                </tr>
+                <tr>
+                    <td>//</td>
+                    <td>Floor division</td>
+                    <td>x // y</td>
+                </tr>
+              </tbody>	
+          </table>
+          <h2>Python Assignment Operators</h2>
+          <P>Assignment operators are used to assign values to variables:</P>
+        
+            <table class="table table-bordered table-striped">
+                <thead>
+                    <tr class="success">
+                        <th>Operator</th>
+                        <th>Example</th>
+                        <th>Same As</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>=</td>
+                        <td>x = 5</td>
+                        <td>x = 5</td>
+                    </tr>
+                    <tr>
+                        <td>+=</td>
+                        <td>x += 3</td>
+                        <td>x = x + 3</td>
+
+                    </tr>
+
+                    <tr>
+                        <td>-=</td>
+                        <td>x -= 3</td>
+                        <td>x = x - 3</td>
+
+                    </tr>
+                    <tr>
+                        <td>*=</td>
+                        <td>x *= 3</td>
+                        <td>x = x * 3</td>
+
+                    </tr>
+
+                    <tr>
+                        <td>/=</td>
+                        <td>x /= 3</td>
+                        <td>x = x / 3</td>
+
+                    </tr>
+                    <tr>
+                        <td>%=</td>
+                        <td>x %= 3</td>
+                        <td>x = x % 3</td>
+
+                    </tr>
+
+                    <tr>
+                        <td>//=</td>
+                        <td>x //= 3</td>
+                        <td>x = x // 3</td>
+
+                    </tr>
+
+                    <tr>
+                        <td>**=</td>
+                        <td>x **= 3</td>
+                        <td>x = x ** 3</td>
+
+                    </tr>
+                    <tr>
+                        <td>&=</td>
+                        <td>x &= 3</td>
+                        <td>x = x & 3</td>
+
+                    </tr>
+                    <tr>
+                        <td>|=</td>
+                        <td>x |= 3</td>
+                        <td>x = x | 3</td>
+
+                    </tr>
+                    <tr>
+                        <td>^=</td>
+                        <td>x ^= 3</td>
+                        <td>x = x ^ 3</td>
+
+                    </tr>
+                    <tr>
+                        <td>>>=</td>
+                        <td>x >>= 3</td>
+                        <td>x = x >> 3</td>
+
+                    </tr>
+                    <tr>
+                        <td> <<=</td>
+                        <td>x <<= 3</td>
+                        <td>x = x << 3</td>
+
+                    </tr>
+                </tbody>
+            </table>
+            <h2>Python Comparison Operators</h2>
+            <p>Comparison operators are used to compare two values:</p>
+            <table class="table table-striped table-bordered">
+                <thead>
+                    <tr class="success">
+                            <th>Operator</th>
+                            <th>Name</th>
+                            <th>Example</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>==</td>
+                        <td>Equal</td>
+                        <td>x == y</td>
+                    </tr>
+                    <tr>
+                        <td>!=</td>
+                        <td>Not Equal</td>
+                        <td>x != y</td>
+                    </tr>
+                    <tr>
+                        <td>></td>
+                        <td>Greater than</td>
+                        <td>x > y</td>
+                    </tr>
+                    <tr>
+                        <td><</td>
+                        <td>Less than</td>
+                        <td>x < y</td>
+                    </tr>
+                    <tr>
+                        <td>>=</td>
+                        <td>Greater than or equal to</td>
+                        <td>x >= y</td>
+                    </tr>
+
+                    <tr>
+                        <td><=</td>
+                        <td>Less than or equal to</td>
+                        <td>x <= y</td>
+                    </tr>
+
+                </tbody>
+            </table>
+            <h2>Python Logical Operators</h2>
+            <p>Logical operators are used to combine conditional statements:</p>
+
+            <table class="table table-bordered table-striped">
+                <thead>
+                        <tr class="success">
+                            <th>Operator</th>
+                            <th>Description</th>
+                            <th>Example</th>
+                        </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>and</td>
+                        <td>Returns True if Both statements are true</td>
+                        <td>x < 5 and x < 10</td>
+                    </tr>
+
+                    <tr>
+                        <td>or</td>
+                        <td>Returns True if one of the statements is true</td>
+                        <td>x < 5 or x < 10</td>
+                    </tr>
+                    <tr>
+                        <td>not</td>
+                        <td>Reverse the result, returns False if the result is true</td>
+                        <td>not(x < 5 and x < 10)</td>
+                    </tr>
+                </tbody>
+
+            </table>
+            <h2>Python Identity Operators</h2>
+            <p>Identity operators are used to compare the objects, not if they are equal, but if they are actually the same object, with the same memory location:</p>
+            <table class="table table-bordered table-striped">
+                <thead>
+                        <tr class="success">
+                                <th>Operator</th>
+                                <th>Description</th>
+                                <th>Example</th>
+
+                        </tr>
+                </thead>
+                    <tr>
+                        <td>is</td>
+                        <td>Returns True if both variables are the same object</td>
+                        <td>x is y</td>
+
+                    </tr>
+                    <tr>
+                        <td>is not</td>
+                        <td>Returns True if both variables are not the same object</td>
+                        <td>x is not y</td>
+                    </tr>
+                <tbody>
+
+                </tbody>
+            </table>
+           <h2> Python Membership Operators</h2>
+            <p>Membership operators are used to test if a sequence is presented in an object:</p>
+       
+        <table class="table table-striped table-bordered">
+            <thead>
+                <tr class="success">
+                    <th>Operator</th>
+                    <th>Description</th>
+                    <th>Example</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>in</td>
+                    <td>Returns True if a sequence with the specified value is present in the object</td>
+                    <td>x in y</td>
+                </tr>
+                <tr>
+                    <td>not in</td>
+                    <td>	Returns True if a sequence with the specified value is not present in the object</td>
+                    <td>x not in y</td>
+                </tr>    
+            </tbody>
+        </table>
+        <h2>Python Bitwise Operators</h2>
+        <p>Bitwise operators are used to compare (binary) numbers:</p>
+         <table class="table table-bordered table-striped">
+             <thead>
+                 <tr class="success">
+                        <th>Operator</th>
+                        <th>Name</th>
+                        <th>Description</th>
+                 </tr>
+             </thead>
+             <tbody>
+                <tr>
+                    <td>&</td>
+                    <td>AND</td>
+                    <td>Sets each bit to 1 if both bits are 1</td>
+                </tr>
+
+                <tr>
+                    <td>|</td>
+                    <td>OR</td>
+                    <td>Sets each bit to 1 if one of two bits is 1</td>
+                </tr>
+
+                <tr>
+                    <td>^</td>
+                    <td>XOR</td>
+                    <td>Sets each bit to 1 if only one of two bits is 1</td>
+                </tr>
+
+                <tr>
+                    <td>~</td>
+                    <td>NOT</td>
+                    <td>Inverts all the bits</td>
+                </tr>
+
+                <tr>
+                    <td><<</td>
+                    <td>Zero fill left shift</td>
+                    <td>Shift left by pushing zeros in from the right and let the leftmost bits fall off</td>
+                </tr>
+                <tr>
+                    <td>>></td>
+                    <td>Signed right shift</td>
+                    <td>Shift right by pushing copies of the leftmost bit in from the left, and let the rightmost bits fall off</td>
+                </tr>
+             </tbody>
+         </table>
+         <h2>Reference</h2>
+        <ul>
+        <li>All the documentation in this page is taken from<a href="https://www.w3schools.com/python/" target="_blank"> https://www.w3schools.com/python/</a></li>
+        </ul>
+                        
+
+
+
+
+
+            
+    </section>
+        
+            
+</main>
+</body>
+</html>
